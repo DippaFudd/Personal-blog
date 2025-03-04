@@ -30,4 +30,13 @@ THEN I can see the title, the content, and the author of the post.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 
-![Alt text]https://github.com/DippaFudd/Personal-blog/blob/315feb468b60c502f1b1c1954c6f9ac4879cf120/2025-03-04%20(6).png
+![2025-03-04 (6)](https://github.com/user-attachments/assets/9a23d88a-51a6-46b5-a1af-b0189da1e664)
+
+![2025-03-04 (7)](https://github.com/user-attachments/assets/835d982e-c616-4766-bdc2-1cddf09a4b72)
+
+![2025-03-04 (8)](https://github.com/user-attachments/assets/1392db42-6a3f-496c-a7da-2478a3d5e8c2)
+
+![2025-03-04 (10)](https://github.com/user-attachments/assets/ca4d11e5-223b-444e-bee2-24b8d057f4f9)
+
+
+
