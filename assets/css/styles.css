@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 40px); /* Adjust height to fit the page */
+}
+
+.form-container, .image-container {
+  flex: 1;
+  padding: 5px;
+  border: 2px solid #0a0a0a;
+  border-radius: 8px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure containers are the same height */
+}
+
+.image-container img {
+  max-width: 80%; /* Adjust the width to make the image medium-sized */
+  max-height: 80%; /* Adjust the height to make the image medium-sized */
+  object-fit: cover;
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.divider-line-horizontal {
+  width: 100%;
+  height: 2px;
+  background-color: #080808;
+  margin: 20px 0;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Light/Dark Mode Styles */
+body.light-mode {
+  background-color: #fff;
+  color: #0a0a0a;
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode header, body.dark-mode footer {
+  background-color: #000; /* Ensure header and footer background are dark in dark mode */
+  color: #fff; /* Ensure text is visible in dark mode */
+}
+
+body.light-mode header, body.light-mode footer {
+  background-color: #f0f0f0; /* Ensure header and footer background are light in light mode */
+  color: #000; /* Ensure text is visible in light mode */
+}
+
+body.dark-mode .divider-line-vertical, body.dark-mode .divider-line-horizontal {
+  background-color: #fff; /* White divider lines in dark mode */
+}
+
+body.light-mode .divider-line-vertical, body.light-mode .divider-line-horizontal {
+  background-color: #080808; /* Dark divider lines in light mode */
+}
+
+body.dark-mode .form-container, body.dark-mode .image-container {
+  border-color: #fff; /* Ensure border is visible in dark mode */
+}
+
+body.light-mode .form-container, body.light-mode .image-container {
+  border-color: #0a0a0a; /* Ensure border is visible in light mode */
+}
+
+body.dark-mode .container {
+  background-color: #000; /* Dark background for container in dark mode */
+  border-color: #fff; /* White border for container in dark mode */
+}
+
+body.light-mode .container {
+  background-color: #f9f9f9; /* Light background for container in light mode */
+  border-color: #0a0a0a; /* Dark border for container in light mode */
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}

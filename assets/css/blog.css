@@ -1,0 +1,111 @@
+#posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add gap between posts */
+  padding: 20px; /* Add padding around the container */
+  border: 1px solid #0a0a0a; /* Add border to the container */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  background-color: #f9f9f9; /* Add background color for the container */
+}
+
+.post {
+  margin: 5px 0; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  border: 1px solid #0a0a0a;
+  border-radius: 8px; /* Add border radius for rounded corners */
+  background-color: #fff; /* Add background color for the post box */
+  font-size: 14px; /* Reduced font size */
+}
+
+.post h2 {
+  position: relative;
+  margin-bottom: 10px; /* Reduced margin */
+  font-size: 16px; /* Reduced font size */
+}
+
+.post h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -5px; /* Adjusted position */
+  left: 0;
+}
+
+button {
+  padding: 5px; /* Reduced padding */
+  font-size: 14px; /* Reduced font size */
+}
+
+footer {
+  margin-top: 10px; /* Reduced margin */
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px; /* Reduced font size */
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 10px 0; /* Reduced margin */
+}
+
+/* Light/Dark Mode Styles */
+body.light-mode {
+  background-color: #fff;
+  color: #000; /* Ensure text is visible in light mode */
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff; /* Ensure text is visible in dark mode */
+}
+
+body.light-mode footer {
+  color: #000; /* Ensure text is visible in light mode */
+}
+
+body.dark-mode footer {
+  color: #fff; /* Ensure text is visible in dark mode */
+}
+
+body.dark-mode .post {
+  background-color: #000; /* Dark background for posts in dark mode */
+  border-color: #fff; /* White border for posts in dark mode */
+  color: #fff; /* Ensure text is visible in dark mode */
+}
+
+body.light-mode .post {
+  background-color: #fff; /* Light background for posts in light mode */
+  border-color: #0a0a0a; /* Dark border for posts in light mode */
+  color: #000; /* Ensure text is visible in light mode */
+}
+
+body.dark-mode #posts-container {
+  background-color: #000; /* Dark background for posts container in dark mode */
+  border-color: #fff; /* White border for posts container in dark mode */
+}
+
+body.light-mode #posts-container {
+  background-color: #f9f9f9; /* Light background for posts container in light mode */
+  border-color: #0a0a0a; /* Dark border for posts container in light mode */
+}
+
+/* Divider at the bottom of the page to separate posts and footer */
+.divider-bottom {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+
+
+
+
+
