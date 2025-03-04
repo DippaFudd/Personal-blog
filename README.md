@@ -29,3 +29,5 @@ WHEN I take a closer look at a single blog entry in the list,
 THEN I can see the title, the content, and the author of the post.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
+
+https://github.com/DippaFudd/Personal-blog/blob/10636902c0b3dfbbb78394573220d91757afd208/2025-03-04%20(6).png
