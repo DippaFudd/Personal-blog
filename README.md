@@ -2,6 +2,10 @@
 
 Welcome to the Personal Blog project! This repository contains the source code for a simple personal blog application where users can create and view blog posts. The application supports light and dark themes, which can be toggled by the user.
 
+## Description
+
+This project is a personal blog application designed for a marketing student to showcase their thoughts and experiences. Users can create and view blog posts, toggle between light and dark themes, and store blog post data in localStorage. The application is responsive and user-friendly, providing a seamless experience for creating and viewing blog content.
+
 ## User Story
 
 As a marketing student, I want a personal blog so that I can showcase my thoughts and experiences.
