@@ -1,6 +1,4 @@
-// Wait for the DOM to fully load before executing the script
 document.addEventListener("DOMContentLoaded", () => {
-  // Get the form and error message elements
   const form = document.getElementById("blog-form");
   const errorMessage = document.getElementById("error-message");
 
@@ -37,6 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
       // Redirect to the posts page
       window.location.href = "blog.html";
     }
+  });
+
+  // Add event listeners to form fields to hide error message on input
+  form.querySelectorAll("input, textarea").forEach((input) => {
+    input.addEventListener("input", () => {
+      if (input.value.trim() !== "") {
+        errorMessage.classList.add("hidden");
+      }
+    });
   });
 
   // Add an event listener to the back button for the click event
